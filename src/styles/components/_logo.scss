@@ -1,0 +1,14 @@
+.logo{
+    display: flex;
+    flex-grow: 1/2;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.logo h3{
+    align-self: center;
+    margin-left: 10px;
+    font-weight: 400;
+}

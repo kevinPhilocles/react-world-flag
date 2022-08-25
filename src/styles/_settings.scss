@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "font-1";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+}
+
+$font-1: "font-1", sans-serif;
+
+// $backgroundColor: #e0e0e0;
+$whiteBg: #e0e0e0;
+$darkBg: #232527;
+$txtColor: #001f3f;
+
+// @mixin verticalCenter {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $whiteBg;
+  font-family: $font-1;
+  margin: 0 auto;
+  color: $txtColor;
+  width: 986px;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 80%;
+  }
+}

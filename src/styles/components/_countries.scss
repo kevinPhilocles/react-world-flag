@@ -1,0 +1,114 @@
+.countries {
+  width: 100%;
+
+  .countries-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 20px 0;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 10px #d0d0d0, -10px -10px 10px #f0f0f0;
+    padding: 15px;
+
+    .progress-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .range {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 130px;
+        height: 15px;
+        background: #d0d0d0;
+        border-radius: 10px;
+        outline: none;
+        box-shadow: inset 5px 5px 5px #d0d0d0, inset -5px -5px 10px #f0f0f0;
+        overflow: hidden;
+      }
+
+      .range::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        border: 2px solid $txtColor;
+        box-shadow: -407px 0 0 400px $txtColor;
+        cursor: pointer;
+      }
+
+      .range-value {
+        margin-left: 15px;
+        box-shadow: inset 5px 5px 5px #d0d0d0, inset -5px -5px 10px #f0f0f0;
+        position: relative;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 50px;
+      }
+    }
+  }
+
+  .continent-list {
+    display: flex;
+
+    .continent-radio {
+      margin: 0 15px;
+      display: flex;
+
+      label {
+        margin-left: 10px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      label:hover {
+        transform: scale(1.2);
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      input[type="radio"]:checked + label {
+        box-shadow: inset 5px 5px 10px #d0d0d0, inset -5px -5px 10px #f0f0f0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .reset-filter {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      background: #e0e0e0;
+      box-shadow: 10px 10px 10px #d0d0d0, -10px -10px 10px #f0f0f0;
+      padding: 0.8rem 2rem;
+      border-radius: 10px;
+      border: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// https://www.youtube.com/watch?v=naVRyGvJX6E&ab_channel=CodingArtist
+
+// https://www.youtube.com/watch?v=T-1dSuMo0TA&ab_channel=OnlineTutorials
